@@ -6,7 +6,22 @@ The script will ask you for your environment name, AWS region, account ID, and L
 
 Please note that this script assumes you have properly configured the AWS CLI with appropriate credentials and permissions.
 
-## Permissiosn
+# Running The Script
+
+Make sure you're logged in to your AWS account:
+
+```
+aws configure
+```
+
+Change the script permissions and run the script: 
+
+```
+chmod +x ./setup-restart.sh
+./setup-restart.sh
+```
+
+## Permissions
 
 Make sure your user has `ecr:CreateRepository` and `ecr:GetAuthorizationToken` actions. To resolve these issues, you need to attach a policy with the required permissions to your user.
 
